@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shakur Todo</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="logo-input">
+          <div class="logo">
+            <img src="images/rocket.png" alt="log-img" />
+            <h2>to<span>do</span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+          <div class="input">
+        <input type="text" placeholder="Plan your day!" id="todo-input"/>
+        <button class="btn__primary" id="add">
+          Add <img src="images/add.png" alt="" />
+        </button>
+    <span class="error" id="error-message">Please  enter a task</span>
+        </div>
+        <div class="todo" id="todo">
+            <div class="list-template" style="display: none;">
+              <div class="list">
+                <input type="checkbox" name="check" />
+                <label></label>
+                <i class="fa-solid fa-trash delete-btn"></i>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
