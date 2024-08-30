@@ -1,6 +1,7 @@
 const inputEl = document.getElementById("todo-input");
 const addBtn = document.getElementById("add");
 const listEl = document.getElementById("todo");
+const errorMessage = document.getElementById("error-message"); // Error message element
 let toDos = [];
 let doneList = [];
 
@@ -69,6 +70,7 @@ function render(toDos, doneList) {
 }
 
 render(toDos, doneList);
+
 const addTodo = () => {
     const todoText = inputEl.value.trim();
 
@@ -84,6 +86,7 @@ const addTodo = () => {
         render(toDos, doneList);
     }
 };
+
 addBtn.addEventListener('click', addTodo);
 
 inputEl.addEventListener('keypress', (e) => {
